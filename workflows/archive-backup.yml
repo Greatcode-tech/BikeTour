@@ -1,0 +1,26 @@
+name: Archive project on push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "192625938+Greatcode-tech@users.noreply.github.com"
+          git config --global user.name "Julia"
+
+      - name: Create archive branch and push
+        run: |
+          git fetch origin
+          git checkout -B archive
+          git add .
+          git commit -m "Archive backup on push to main"
+          git push origin archive --force
