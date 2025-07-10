@@ -1,17 +1,118 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radtour</title>
-    <link rel="icon" type="image/png" href="img/Bike_Icon.svg" sizes="32x32">
-</head>
-<body>
-    <head>
-
-    </head>
+    <link rel="icon" type="image/png" href="/img/icons/Bike_Icon.svg" sizes="32x32" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="main_settings.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="tour_beschreibung.css">
+    <link rel="stylesheet" href="tourdaten.css">
+  </head>
+  <body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+              <i class="ri-tree-fill"></i>
+              <a href="index.html"><p>Fahrrad Tour <br>Ostsee </p></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="#">Touren</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Über uns</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="header-picture-container">
+      <img src="/img/img/header_picture.jpg" alt="Header Bild" class="header-picture">
+      <div class="header-picture-gradient"></div>
+      <div class="textbox">
+        <p>
+          Entdecke die schönste Fahrradtour in deinem Leben!
+          <span>Dresden -> Ostsee</span>
+        </p>
+      </div>
+    </div> 
     <main>
-        
+      <section class="tour-section">
+        <h2>Tourbeschreibung</h2>
+        <p>
+          Am fünften Tag legt man auf dem Oder-Neiße-Radweg eine Strecke von etwa 56 Kilometern zurück, um von Frankfurt an der Oder nach Groß Neuendorf zu gelangen. Diese landschaftlich wieder einmal eindrucksvolle Strecke führt über Lebus und Küstrin und ist reich an Sehenswertem und interessanten Ausblicken. Was am Vortag die Ziltendorfer Niederungen vor Frankfurt a. d. Oder waren, sind heute nördlich der Stadt die Oderwiesen und die Oderhänge, bei denen es hin und wieder auch gilt, einige Steigungen zu überwinden. Sehr imposant ist bei Lebus der bis zu 100 Meter breite und etwa 550 Meter lange Bergrücken,
+          <span id="read-more-link-wrapper">
+            <a href="#" id="read-more-link">
+              <span style="display:inline-block;width:18px;height:18px;vertical-align:middle;" id="arrow-placeholder"></span>
+              weiterlesen
+            </a>
+          </span>
+          <span id="read-more-text" style="display:none;">
+            ... der bereits in vorgeschichtlicher Zeit als uneinnehmbare Festungsbasis galt und um das Jahr 1000 noch einmal als Wehranlage umgebaut wurde. Bekannt ist der Ort außerdem für seine Adonisröschen, jene hübschen Blumenschönheiten, die mit ihren vielen Farben die Besucher verzaubern.<br><br>
+            <strong>Malerische Dörfer und entspannte Lebensart entlang des Oder-Neiße-Radweges</strong><br>
+            Weiter geht die Tour durch die flache Bruchlandschaft und entlang des Deiches: Herrliche Ausblicke sorgen für unvergessliche Momente. Nach ca. 25 Kilometer erreicht man das Küstriner Vorland und wenige Augenblicke später die polnische Stadt Küstrin, die einen kleinen Abstecher wert ist, beispielsweise wegen der ehemaligen Festung, die als eine der modernsten brandenburgisch-preußischen Anlagen galt, und dem interessanten Bahnhof aus dem 19. Jahrhundert. Ganz in der Nähe lockt der Nationalpark Warthemündung die Ornithologen in ein kleines Vogelparadies. Von Küstrin sind es noch etwa 28 Kilometer bis Groß Neuendorf. Die Radtour führt weiter durch das Oderbruch mit seinen idyllischen Dörfern. Viele Künstler haben sich hier niedergelassen, um in entspannter und ruhiger Atmosphäre ihre Werke zu erschaffen.<br><br>
+            <strong>Relikte aus alter Zeit liebevoll restauriert</strong>
+          </span>
+        </p>
+      </section>
+
+      <section class="tourdaten-section">
+        <h2 class="tourdaten-heading">Tourdaten</h2>
+        <div class="tourdaten-grid">
+          <div class="tourdaten-item">
+            <img src="/img/icons/Strecke_Icon.svg" alt="Länge" class="tourdaten-icon">
+            <div>
+              <span class="tourdaten-label">Länge</span>
+              <span class="tourdaten-value">55,7 km</span>
+            </div>
+          </div>
+          <div class="tourdaten-item">
+            <img src="/img/icons/Aufstieg_Icon.svg" alt="Aufstieg" class="tourdaten-icon">
+            <div>
+              <span class="tourdaten-label">Aufstieg</span>
+              <span class="tourdaten-value">324 m</span>
+            </div>
+          </div>
+          <div class="tourdaten-item">
+            <img src="/img/icons/Abstieg_Icon.svg" alt="Abstieg" class="tourdaten-icon">
+            <div>
+              <span class="tourdaten-label">Abstieg</span>
+              <span class="tourdaten-value">342 m</span>
+            </div>
+          </div>
+          <div class="tourdaten-item">
+            <img src="/img/icons/Höhster_Punkt_Icon.svg" alt="Höhster Punkt">
+            <div>
+              <span class="tourdaten-label">Höchster Punkt</span>
+              <span class="tourdaten-value">55 m</span>
+            </div>
+          </div>
+          <div class="tourdaten-item">
+            <img src="img/lowest.svg" alt="Tiefster Punkt" class="tourdaten-icon">
+            <div>
+              <span class="tourdaten-label">Tiefster Punkt</span>
+              <span class="tourdaten-value">7 m</span>
+            </div>
+          </div>
+          <div class="tourdaten-item">
+            <img src="img/time.svg" alt="Zeit" class="tourdaten-icon">
+            <div>
+              <span class="tourdaten-label">Zeit</span>
+              <span class="tourdaten-value">5 h</span>
+            </div>
+          </div>
+          <div class="tourdaten-item schwierig">
+            <img src="img/difficulty.svg" alt="Schwierigkeit" class="tourdaten-icon">
+            <div>
+              <span class="tourdaten-label">Schwierigkeit</span>
+              <span class="tourdaten-value">leicht</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <script src="readmore.js"></script>
+  </body>
 </html>

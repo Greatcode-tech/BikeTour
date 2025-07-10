@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const arrow = document.getElementById("arrow-placeholder");
 
   // SVG-Pfeil einfügen (nach unten zeigend)
-  arrow.innerHTML = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7L9 12L14 7" stroke="#b4400b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  arrow.innerHTML = `<svg class="arrow-svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7L9 12L14 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -17,8 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const lessLink = document.createElement("a");
       lessLink.href = "#";
       lessLink.id = "read-less-link";
-      lessLink.textContent = "Weniger anzeigen";
+      lessLink.innerHTML = `<span style="display:inline-block;width:18px;height:18px;vertical-align:middle;" class="arrow-svg">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 11L9 6L14 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>Weniger anzeigen`;
       lessLink.style.marginLeft = "8px";
+      lessLink.style.display = "block";
+      lessLink.style.textAlign = "center";
+      lessLink.style.marginTop = "16px";
       moreText.appendChild(lessLink);
 
       lessLink.addEventListener("click", function (ev) {

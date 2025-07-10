@@ -1,0 +1,58 @@
+.header-picture-container {
+  position: relative;
+  width: 100vw; /* volle Viewport-Breite */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 750px; /* Höhe nach Bedarf anpassen */
+  overflow: hidden;
+  background: transparent; /* Hintergrund entfernen */
+}
+
+.header-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* vorher: contain */
+  display: block;
+}
+
+.header-picture-gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Deutlich dunklerer schwarzer Verlauf */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 40%,
+    rgba(0, 0, 0, 0.25) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 2;
+}
+
+.textbox {
+  position: absolute;
+  left: 50%;
+  bottom: 250px;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: #fbc97f;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.textbox span {
+  position: static; /* Standard-Positionierung */
+  display: block;
+  margin-top: 1.2em; /* Abstand zum oberen Text */
+  font-size: 1.4rem; 
+  color: #ffe0b2;   
+  text-align: center;
+}
+

@@ -1,0 +1,71 @@
+.header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px 7%; /* Dicke verringert */
+  transition: all .50s ease;
+  background-color: var(--third-color);
+  box-shadow: 0 5px 50px rgba(27, 26, 26, 0.071); /* Schatten hinzugefügt */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem 2rem;  // Entfernt, da .header das Padding übernimmt */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Vertikal zentrieren */
+  gap: 0.5rem; /* Abstand zwischen Icon und Text */
+}
+
+.logo a, .logo p {
+  color: #d37b29;
+  text-decoration: none;
+  font-weight: 1000;
+  font-family: sans-serif;
+}
+
+.logo i {
+  font-size: 2rem; /* Größe des Icons anpassen, ggf. nach Wunsch ändern */
+  color: #d37b29;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #e6dcd2;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+
+

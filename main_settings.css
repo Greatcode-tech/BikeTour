@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Schrift hinzufügen: */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --first-color: #ffffff; 
+    --secound-color: #b4400b; 
+    --primary-color: #676666; 
+    --primary-color-light: #f0f0f0;
+    --third-color: #2d453f; /*Alternativ Farbe: #76c2af */
+}
+
+
