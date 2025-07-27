@@ -1,4 +1,4 @@
-.header {
+.site-header {
   position: relative;
   width: 100%;
   top: 0;
@@ -10,27 +10,27 @@
   box-shadow: 0 5px 50px rgba(27, 26, 26, 0.071); /* Schatten hinzugefügt */
 }
 
-.navbar {
+.main-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* padding: 1rem 2rem;  // Entfernt, da .header das Padding übernimmt */
 }
 
-.logo {
+.brand-logo {
   display: flex;
   align-items: center; /* Vertikal zentrieren */
   gap: 0.5rem; /* Abstand zwischen Icon und Text */
 }
 
-.logo a, .logo p {
+.brand-logo a, .brand-logo p {
   color: #d37b29;
   text-decoration: none;
   font-weight: 1000;
   font-family: sans-serif;
 }
 
-.logo i {
+.brand-logo i {
   font-size: 2rem; /* Größe des Icons anpassen, ggf. nach Wunsch ändern */
   color: #d37b29;
   display: flex;
@@ -38,13 +38,13 @@
   height: 100%;
 }
 
-.nav-links {
+.main-nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 
-.nav-links li a {
+.main-nav-links li a {
   color: #e6dcd2;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;

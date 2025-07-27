@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="tourdaten.css">
   </head>
   <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
+    <header class="site-header">
+        <nav class="main-navbar">
+            <div class="brand-logo">
               <i class="ri-tree-fill"></i>
               <a href="index.html"><p>Fahrrad Tour <br>Ostsee </p></a>
             </div>
-            <ul class="nav-links">
+            <ul class="main-nav-links">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="#">Touren</a></li>
                 <li><a href="#">Kontakt</a></li>
@@ -28,21 +28,21 @@
             </ul>
         </nav> 
     </header>
-    <div class="header-picture-container">
-      <img src="/img/img/header_picture.jpg" alt="Header Bild" class="header-picture">
-      <div class="header-picture-gradient"></div>
-      <div class="textbox">
+    <section class="hero-image">
+      <img src="/img/img/header_picture.jpg" alt="Header Bild" class="hero-img">
+      <div class="hero-gradient"></div>
+      <div class="hero-text">
         <p>
           Entdecke die schönste Fahrradtour in deinem Leben!
-          <span>Dresden -> Ostsee</span>
+          <span class="hero-route">Dresden -> Ostsee</span>
         </p>
       </div>
-    </div> 
+    </section> 
     <main>
-      <section class="tour-section">
-        <h2>Tourbeschreibung</h2>
+      <section class="tour-description-section">
+        <h2 class="tour-description-heading">Tourbeschreibung</h2>
         <p>
-          Am fünften Tag legt man auf dem Oder-Neiße-Radweg eine Strecke von etwa 56 Kilometern zurück, um von Frankfurt an der Oder nach Groß Neuendorf zu gelangen. Diese landschaftlich wieder einmal eindrucksvolle Strecke führt über Lebus und Küstrin und ist reich an Sehenswertem und interessanten Ausblicken. Was am Vortag die Ziltendorfer Niederungen vor Frankfurt a. d. Oder waren, sind heute nördlich der Stadt die Oderwiesen und die Oderhänge, bei denen es hin und wieder auch gilt, einige Steigungen zu überwinden. Sehr imposant ist bei Lebus der bis zu 100 Meter breite und etwa 550 Meter lange Bergrücken,
+          Am fünften Tag legt man auf dem Oder-Neiße-Radweg eine Strecke von etwa 56 Kilometern zurück, um von Frankfurt an der Oder nach Groß Neuendorf zu gelangen. Diese landschaftlich wieder einmal eindrucksvolle Strecke führt über Lebus und Küstrin und ist reich an Sehenswertem und interessanten Ausblicken. Was am Vortag die Zimtendopfer Niederungen vor Frankfurt a. d. Oder waren, sind heute nördlich der Stadt die Oderwiesen und die Oderhänge, bei denen es hin und wieder auch gilt, einige Steigungen zu überwinden. Sehr imposant ist bei Lebus der bis zu 100 Meter breite und etwa 550 Meter lange Bergrücken,
           <span id="read-more-link-wrapper">
             <a href="#" id="read-more-link">
               <span style="display:inline-block;width:18px;height:18px;vertical-align:middle;" id="arrow-placeholder"></span>
@@ -58,56 +58,56 @@
         </p>
       </section>
 
-      <section class="tourdaten-section">
-        <h2 class="tourdaten-heading">Tourdaten</h2>
-        <div class="tourdaten-grid">
-          <div class="tourdaten-item">
-            <img src="/img/icons/Strecke_Icon.svg" alt="Länge" class="tourdaten-icon">
+      <section class="tour-data-section">
+        <h2 class="tour-data-heading">Tourdaten</h2>
+        <div class="tour-data-grid">
+          <div class="tour-data-item">
+            <img src="/img/icons/Strecke_Icon.svg" alt="Länge" class="tour-data-icon">
             <div>
-              <span class="tourdaten-label">Länge</span>
-              <span class="tourdaten-value">55,7 km</span>
+              <span class="tour-data-label">Länge</span>
+              <span class="tour-data-value">55,7 km</span>
             </div>
           </div>
-          <div class="tourdaten-item">
-            <img src="/img/icons/Aufstieg_Icon.svg" alt="Aufstieg" class="tourdaten-icon">
+          <div class="tour-data-item">
+            <img src="/img/icons/Aufstieg_Icon.svg" alt="Aufstieg" class="tour-data-icon">
             <div>
-              <span class="tourdaten-label">Aufstieg</span>
-              <span class="tourdaten-value">324 m</span>
+              <span class="tour-data-label">Aufstieg</span>
+              <span class="tour-data-value">324 m</span>
             </div>
           </div>
-          <div class="tourdaten-item">
-            <img src="/img/icons/Abstieg_Icon.svg" alt="Abstieg" class="tourdaten-icon">
+          <div class="tour-data-item">
+            <img src="/img/icons/Abstieg_Icon.svg" alt="Abstieg" class="tour-data-icon">
             <div>
-              <span class="tourdaten-label">Abstieg</span>
-              <span class="tourdaten-value">342 m</span>
+              <span class="tour-data-label">Abstieg</span>
+              <span class="tour-data-value">342 m</span>
             </div>
           </div>
-          <div class="tourdaten-item">
-            <img src="/img/icons/Höhster_Punkt_Icon.svg" alt="Höhster Punkt">
+          <div class="tour-data-item">
+            <img src="/img/icons/Höhster_Punkt_Icon.svg" alt="Höchster Punkt">
             <div>
-              <span class="tourdaten-label">Höchster Punkt</span>
-              <span class="tourdaten-value">55 m</span>
+              <span class="tour-data-label">Höchster Punkt</span>
+              <span class="tour-data-value">55 m</span>
             </div>
           </div>
-          <div class="tourdaten-item">
-            <img src="img/lowest.svg" alt="Tiefster Punkt" class="tourdaten-icon">
+          <div class="tour-data-item">
+            <img src="img/lowest.svg" alt="Tiefster Punkt" class="tour-data-icon">
             <div>
-              <span class="tourdaten-label">Tiefster Punkt</span>
-              <span class="tourdaten-value">7 m</span>
+              <span class="tour-data-label">Tiefster Punkt</span>
+              <span class="tour-data-value">7 m</span>
             </div>
           </div>
-          <div class="tourdaten-item">
-            <img src="img/time.svg" alt="Zeit" class="tourdaten-icon">
+          <div class="tour-data-item">
+            <img src="img/time.svg" alt="Zeit" class="tour-data-icon">
             <div>
-              <span class="tourdaten-label">Zeit</span>
-              <span class="tourdaten-value">5 h</span>
+              <span class="tour-data-label">Zeit</span>
+              <span class="tour-data-value">5 h</span>
             </div>
           </div>
-          <div class="tourdaten-item schwierig">
-            <img src="img/difficulty.svg" alt="Schwierigkeit" class="tourdaten-icon">
+          <div class="tour-data-item difficulty">
+            <img src="img/difficulty.svg" alt="Schwierigkeit" class="tour-data-icon">
             <div>
-              <span class="tourdaten-label">Schwierigkeit</span>
-              <span class="tourdaten-value">leicht</span>
+              <span class="tour-data-label">Schwierigkeit</span>
+              <span class="tour-data-value">leicht</span>
             </div>
           </div>
         </div>

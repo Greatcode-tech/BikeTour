@@ -1,11 +1,11 @@
-.tour-section {
+.tour-description-section {
     background: #fff;
     padding: 48px 0 48px 0;
     width: 100%;
     text-align: center;
 }
 
-.tour-section h2 {
+.tour-description-heading {
     color: var(--secound-color);
     font-size: 2.2rem;
     margin-bottom: 50px; 
@@ -14,7 +14,7 @@
     display: inline-block;
 }
 
-.tour-section h2::after {
+.tour-description-heading::after {
     content: "";
     display: block;
     position: absolute;
@@ -30,10 +30,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 20px; /* niedriger */
+    height: 20px;
 }
 
-.tour-section p {
+.tour-description-section p {
     margin: 0 auto;
     max-width: 700px;
     text-align: center;
